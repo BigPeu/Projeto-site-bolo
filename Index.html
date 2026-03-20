@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos do Zé</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo">
+            <h1>Bolos do Zé</h1>
+            <p>OS melhores bolos da região</p>
+        </div>
+    </header>
+    <section class="sobre-nos">
+        <div class="container">
+            <h2>Sobre nós</h2>
+            <div class="sobre-conteudo">
+                <p>
+                    Tudo começou na cozinha da minha avó, em Recife, onde o cheiro de bolo quentinho
+                    sempre foi sinônimo de afeto. Hoje, transformamos essa paixão em bolos artesanais
+                    feitos com ingredientes selecionados e muito carinho.
+                </p>
+                <p>
+                    Nossa missão é levar um pedacinho de felicidade para a sua mesa, seja com o
+                    tradicional Bolo de Rolo ou com nossas criações modernas de chocolate e morango.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="categoria">
+            <h2>Bolos no cardápio</h2>
+
+            <article class="produto-card">
+                <div class="produto-info">
+                    <h3>Bolo Supreme de Chocolate</h3>
+                    <p>Massa amanteigada de cacau 50%, recheada com brigadeiro gourmet cremoso e finalizada com
+                        granulado belga. O equilíbrio perfeito entre o doce e o intenso..</p>
+                    <span class="preco">R$ 14,90</span>
+                    <div class="produto-controles">
+                        <div class="seletor-qtd">
+                            <button class="btn-menos" onclick="alterarQtd(this, -1)">-</button>
+                            <input type="number" value="0" min="0" class="input-qtd" readonly>
+                            <button class="btn-mais" onclick="alterarQtd(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="produto-card">
+                <div class="produto-info">
+                    <h3>Delícia de Ninho com Morangos</h3>
+                    <p>Massa branca fofinha com camadas generosas de creme de leite Ninho e morangos frescos
+                        selecionados. Leve, refrescante e feito no dia do pedido.</p>
+                    <span class="preco">R$ 15,90</span>
+                    <div class="produto-controles">
+                        <div class="seletor-qtd">
+                            <button class="btn-menos" onclick="alterarQtd(this, -1)">-</button>
+                            <input type="number" value="0" min="0" class="input-qtd" readonly>
+                            <button class="btn-mais" onclick="alterarQtd(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </article>
+            <article class="produto-card">
+                <div class="produto-info">
+                    <h3>Bolo de Churros com Doce de Leite</h3>
+                    <p>Massa fofinha com um toque especial de canela, coberta com uma camada generosa de doce de leite
+                        artesanal e polvilhada com açúcar e canela. O sabor da infância em cada mordida.</p>
+                    <span class="preco">R$ 12,90</span>
+                    <div class="produto-controles">
+                        <div class="seletor-qtd">
+                            <button class="btn-menos" onclick="alterarQtd(this, -1)">-</button>
+                            <input type="number" value="0" min="0" class="input-qtd" readonly>
+                            <button class="btn-mais" onclick="alterarQtd(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <footer class="carrinho-fixo">
+        <div class="info-carrinho">
+            <span>Itens: 0</span> <strong>Total: R$ 0,00</strong>
+        </div>
+        <button class="btn-finalizar" onclick="finalizarPedido()">Finalizar Pedido</button>
+    </footer>
+
+</body>
+
+</html>
